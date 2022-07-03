@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+%:
+	dh $@
+
+override_dh_install:
+	install -d debian/pcem-roms/usr/share/pcem/roms
+	find . \
+		-type f \
+		-not -path "./debian/*" \
+		-not -path "./.git*" \
+		-not -path "./*.md" \
+		-not -name "roms.txt" \
+		-exec install {} debian/pcem-roms/usr/share/pcem/roms \;

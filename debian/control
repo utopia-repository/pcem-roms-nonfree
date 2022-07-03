@@ -1,0 +1,21 @@
+Source: pcem-roms-nonfree
+Section: otherosfs
+Priority: optional
+Maintainer: James Lu <james@overdrivenetworks.com>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+Standards-Version: 4.6.1
+Homepage: https://github.com/BaRRaKudaRain/PCem-ROMs
+Vcs-Browser: https://github.com/utopia-repository/pcem-roms-nonfree
+Vcs-Git: https://github.com/utopia-repository/pcem-roms-nonfree.git
+
+Package: pcem-roms-nonfree
+Architecture: all
+Depends:
+ ${misc:Depends},
+Description: IBM PC emulator for old software (ROMs)
+ PCem emulates IBM compatible PCs for running old software, games, and
+ operating systems.
+ .
+ This package contains *NON-FREE* ROMs for PCem.
